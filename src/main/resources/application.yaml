@@ -1,0 +1,34 @@
+#server:
+#  error:
+#    include-message: always
+#    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+
+#  mail:
+#    host: smtp.google.com
+#    username: ehberhuseynli@gmail.com
+#    password: ghjwxavznykenynz
+#    port: 587
+#    protocol: smtp
+#    properties:
+#      mail:
+#        transport:
+#          protocol: smtp
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#          ssl:
+#            trust: smtp.gmail.com
